@@ -1,0 +1,10 @@
+node_modules
+vendor
+.env
+.git
+.gitignore
+*.log
+storage/logs/*
+tests
+.idea
+.vscode
