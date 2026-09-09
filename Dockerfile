@@ -25,6 +25,7 @@ RUN mkdir -p storage/framework/{cache,sessions,views} storage/logs bootstrap/cac
 EXPOSE 10000
 
 CMD php artisan migrate --force && \
+    php artisan db:seed --force && \
     php artisan storage:link || true && \
     php artisan config:cache && \
     php artisan route:cache && \

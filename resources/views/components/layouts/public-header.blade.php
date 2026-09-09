@@ -78,6 +78,7 @@
             <a href="{{ url('/contact') }}" class="block px-4 py-3 text-slate-300 hover:text-big-gold-light hover:bg-white/5 rounded-lg text-sm font-medium">Contact</a>
             <div class="pt-3 border-t border-white/10 mt-2">
                 <a href="{{ url('/partner-with-us') }}" class="btn-gold w-full justify-center text-sm">Partner With Us</a>
+            <a href="{{ route('login') }}" class="flex items-center gap-1.5 px-4 py-3 text-slate-400 hover:text-big-gold-light text-sm font-medium"><i data-lucide="bar-chart-3" class="w-4 h-4"></i> Admin Login</a>
             </div>
         </div>
     </div>
