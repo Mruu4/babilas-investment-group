@@ -1,0 +1,8 @@
+*
+!.gitignore
+!properties/
+!properties/**
+!agriculture/
+!agriculture/**
+!technology/
+!technology/**
