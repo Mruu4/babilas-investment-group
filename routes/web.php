@@ -6,6 +6,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('welcome');
+Route::get('/real-estate', [App\Http\Controllers\RealEstatePageController::class, 'index'])->name('real-estate.index');
+Route::get('/real-estate/{slug}', [App\Http\Controllers\RealEstatePageController::class, 'show'])->name('real-estate.show');
 
 Route::get('/dashboard', [DashboardController::class, 'index'])
     ->middleware(['auth', 'verified', 'role_or_permission:Super Admin|Content Manager|Investment Manager|Editor'])
